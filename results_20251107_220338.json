@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-11-07 22:03:38",
+  "total": 2,
+  "successful": 0,
+  "failed": 2,
+  "results": [
+    {
+      "url": "https://scribblezone.com",
+      "success": false
+    },
+    {
+      "url": "https://hedd.audio",
+      "success": false
+    }
+  ]
+}
