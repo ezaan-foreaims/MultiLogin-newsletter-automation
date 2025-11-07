@@ -1,0 +1,97 @@
+
+## Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/ezaanamin/MultiLogin-newsletter-automation.git
+cd MultiLogin-newsletter-automation
+```
+
+2. **Create a `.env` file** in the project root:
+
+```env
+USERNAME=nils@keaz.app
+PASSWORD=YOUR_MULTILOGIN_PASSWORD
+MLX_BASE=https://api.multilogin.com
+MLX_LAUNCHER_V2=https://launcher.mlx.yt:45001/api/v2
+FOLDER_ID=b749e3ad-c25d-41ad-8285-1843505be99f
+```
+
+> Replace `YOUR_MULTILOGIN_PASSWORD` with your actual password or a secure token.
+
+3. **Prepare input files**
+
+* `websites.txt`: List of websites to sign up for newsletters (one per line)
+* Email pool is defined in `config.py` (you can modify as needed)
+
+---
+
+## Running the Bot
+
+```bash
+python main.py
+```
+
+* The bot authenticates with MultiLogin, starts profiles, and navigates through each website.
+* Fills newsletter forms with human-like typing and submits them.
+* Results are saved to `results_TIMESTAMP.json`.
+
+---
+
+## Example `.env.example`
+
+```
+USERNAME=your_email@example.com
+PASSWORD=your_multilogin_password
+MLX_BASE=https://api.multilogin.com
+MLX_LAUNCHER_V2=https://launcher.mlx.yt:45001/api/v2
+FOLDER_ID=your_folder_id_here
+```
+
+> Rename `.env.example` to `.env` and fill in your credentials.
+
+---
+
+## Notes
+
+* Ensure your MultiLogin profiles are configured correctly.
+* Use a VPN or proxies if needed.
+* Avoid running too many profiles simultaneously to prevent detection.
+* Review logs carefully for errors or failed submissions.
+
+---
+
+## License
+
+This project is for personal or educational use only. Unauthorized commercial use is prohibited.
+
+```
+
+---
+
+### ✅ **Next Steps**
+
+1. Create `requirements.txt`:
+
+```
+
+playwright
+requests
+
+````
+
+2. Create `.env` based on `.env.example`.
+3. Run:
+
+```bash
+pip install -r requirements.txt
+playwright install chromium
+python main.py
+````
+
+---
+
+If you want, I can **also restructure your Python project into multiple files (`config.py`, `utils.py`, `main.py`)** so it’s cleaner and ready to run with this README.
+
+Do you want me to do that?
