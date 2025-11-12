@@ -15,3 +15,6 @@ ALL_KEYWORDS = list({kw for kws in NEWSLETTER_KEYWORDS.values() for kw in kws})
 SUCCESS_INDICATORS = ['thank','success','subscribed','confirm','check your email','check your inbox',
                       'danke','erfolg','abonniert','bestätigen','überprüfen sie ihre e-mail',
                       'merci','succès','abonné','confirmer','vérifiez votre email']
+
+
+EMAIL_NEWSLETTER="doomv5697@gmail.com"

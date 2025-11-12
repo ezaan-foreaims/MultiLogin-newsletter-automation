@@ -11,7 +11,12 @@ load_dotenv()
 # ---------------------------
 USERNAME: str = os.getenv("EMAIL")
 PASSWORD: str = os.getenv("PASSWORD")
-print(USERNAME, PASSWORD, "EZAAN")
+EMAIL_MAIL: str = os.getenv("EMAIL_MAIL")
+APP_PASSWORD: str = os.getenv("APP_PASSWORD")  # App password recommended
+IMAP_SERVER: str = os.getenv("IMAP_SERVER", "imap.gmail.com")
+IMAP_PORT: int = int(os.getenv("IMAP_PORT", "993"))
+SMTP_SERVER: str = os.getenv("SMTP_SERVER", "smtp.gmail.com")
+SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587"))
 
 # ---------------------------
 # Multilogin API
@@ -36,7 +41,7 @@ PROFILE_IDS: List[str] = [
 # ---------------------------
 # Websites and Emails
 # ---------------------------
-WEBSITES_FILE: str = os.getenv("WEBSITES_FILE", "websites.txt")
+WEBSITES_FILE: str = os.getenv("WEBSITES_FILE", "/home/ezaan-amin/Documents/BitBash_Tasks/multi-login/failed_sites.txt")
 
 # EMAIL_POOL in .env as comma-separated string
 EMAIL_POOL: List[str] = [
